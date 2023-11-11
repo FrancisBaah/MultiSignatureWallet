@@ -149,4 +149,11 @@ contract MultiSignatureWallet {
             );
         }
     }
+
+    function getTransactionCount () view public returns (uint256) {
+       return transactionCount;
+    }
+    function getTransactionList () view public returns (transactionParameters [] memory) {
+       return transactionList;
+    }
 }
